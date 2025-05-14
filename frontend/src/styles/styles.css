@@ -1,0 +1,136 @@
+/* General body and text styling */
+body {
+  background-color: #333333; /* Dark background for better contrast */
+  color: #de4d2c; /* Lighter text color for better readability */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  size: 1.2em;
+  line-height: 1.6; /* Improved line spacing */
+}
+
+/* Input field styles */
+input, textarea, select {
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Increased border-radius for a smoother look */
+  padding: 12px 15px; /* Increase padding for a more spacious feel */
+  font-size: 16px;
+  width: 100%; /* Ensures input takes full width */
+  margin-bottom: 20px;
+  background-color: #fff;
+  color: #333;
+  transition: border-color 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+  border-color: #4CAF50;  /* Green border color when focused */
+  outline: none;
+  box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Soft glow effect on focus */
+}
+
+/* Form styles */
+form {
+  padding: 30px;
+  background-color: #fff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Larger shadow for a more prominent form */
+  border-radius: 12px; /* More rounded corners for a smoother look */
+  max-width: 600px;
+  margin: 0 auto; /* Center the form horizontally */
+}
+
+/* Button styles */
+button {
+  background-color: #4CAF50;  /* Green button */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #388e3c;  /* Darker green on hover */
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+button:active {
+  transform: scale(1); /* Button returns to normal size on click */
+}
+
+/* Alert Styling */
+.alert {
+  margin-top: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.alert-success {
+  background-color: #28a745; /* Success green */
+  color: white;
+}
+
+.alert-danger {
+  background-color: #dc3545; /* Danger red */
+  color: white;
+}
+
+/* Navbar Styles */
+.navbar {
+  background-color: #263238; /* Darker background for the navbar */
+  padding: 15px 20px; /* Padding for better spacing */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+}
+
+.navbar .navbar-brand {
+  color: #eaeaea;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.navbar .nav-link {
+  color: #eaeaea;
+  font-size: 16px;
+  padding: 10px 15px;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.navbar .nav-link:hover {
+  color: #263238; 
+  background-color: #ffcc99; 
+  border-radius: 4px;
+}
+
+/* Hover and active states for buttons in the navbar */
+.navbar .nav-link.active {
+  background-color: #ffcc99;
+  color: #263238; 
+}
+
+/* Media Query for Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 10px 15px; 
+  }
+
+  .navbar .navbar-brand {
+    font-size: 20px; 
+  }
+
+  .navbar .nav-link {
+    font-size: 14px; 
+    padding: 8px 12px; 
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+  }
+}
