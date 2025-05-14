@@ -1,0 +1,63 @@
+MERN Full-Stack Application Report
+
+Features
+
+The developed MERN application is a user management system with the following functionalities:
+
+CRUD Operations:
+
+Create: Add new user data via a dynamic form with validations for mandatory fields such as name, email, and phone number.
+Read: Display all user data in a dynamic and interactive grid (AG Grid).
+Update: Edit existing user records using the update form, pre-filled with existing data.
+Delete: Remove user data securely with a confirmation alert.
+Authentication:
+
+A login page verifies user credentials using JWT-based authentication.
+Logout functionality to clear user sessions securely.
+Dynamic Grid with Buttons:
+
+AG Grid integration for displaying user data with functionalities like selection, sorting, and filtering.
+Integrated buttons for "Edit" and "Delete" functionality directly in the grid.
+Form Validations:
+
+Dynamic client-side validations for required fields, email format, and phone number format.
+Responsive UI:
+
+The app is styled using Bootstrap to ensure responsiveness and usability on different devices.
+Technologies Used
+
+Front-End:
+
+React.js: Framework for creating interactive and dynamic UI components.
+Axios: For making HTTP requests to the back-end API.
+AG Grid: For implementing the data grid for displaying user information dynamically.
+Bootstrap: For responsive design and styling.
+Back-End:
+
+Node.js: Back-end runtime environment.
+Express.js: Framework for creating RESTful APIs.
+JWT: For secure user authentication.
+Database:
+
+MongoDB (MongoDB Atlas): For storing user data securely and efficiently.
+Development Tools:
+
+VS Code: IDE for development.
+Postman: For testing RESTful APIs.
+Faker.js: For generating mock data during development.
+
+
+Challenges and Solutions
+
+Challenge: Implementing dynamic grid functionality with interactive buttons.
+
+Solution: Integrated AG Grid's built-in functionalities for sorting and filtering while customizing cell renderers for adding edit and delete buttons.
+Challenge: Securing user credentials during login.
+
+Solution: Used bcrypt.js for hashing passwords and JWT for token-based authentication to ensure secure login sessions.
+Challenge: Ensuring responsive design for various devices.
+
+Solution: Leveraged Bootstrap's grid system and responsive utilities to make the application user-friendly on mobile and desktop devices.
+Challenge: Handling large data sets dynamically in the grid.
+
+Solution: Used AG Grid's virtual scrolling and filtering capabilities to improve performance.
